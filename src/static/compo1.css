@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&family=Fredoka:wght@300..700&family=Gabarito:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    color: rgb(41, 39, 39);
+    font-family: "Biryani", sans-serif;
+    background: linear-gradient(120deg, rgb(183, 229, 217), rgb(175, 204, 250));
+}
+
+form {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px;
+
+}
+
+.sec {
+    padding: 30px 20px;
+    width: 80vw;
+    font-family: "Gabarito", sans-serif;
+    border-bottom: 1px solid rgba(112, 108, 108, 0.2);
+}
+
+.sec span {
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+.sec h3 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.opt {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 30px;
+}
+
+.option {
+    margin: 15px;
+}
+
+.option input {
+    margin-right: 5px;
+    font-size: 1rem;
+}
+
+.option label {
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+.btn {
+    margin: 30px 10px 0px 10px;
+}
+
+.btn button {
+    font-family: "Gabarito", sans-serif;
+    outline: none;
+    border: 2px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: rgb(175, 204, 250);
+    box-shadow: 6px 7px 0px rgb(41, 39, 39), 2px 3px 0px rgb(41, 39, 39);
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.btn button::after {
+    content: '';
+    width: 137px;
+    height: 53px;
+    background-color: rgb(110, 160, 241);
+    z-index: -1;
+    position: absolute;
+    border-radius: 10px;
+    top: 0px;
+    right: -139px;
+    transition: 1s;
+
+}
+
+.btn button:hover::after {
+    right: 0px;
+}
+
+.btn button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 3px 0px rgb(41, 39, 39), 2px 2px 0px rgb(41, 39, 39);
+}
+
+.footer {
+    padding: 30px 10px;
+    background-color: rgb(183, 229, 217);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h1 {
+    font-family: "Gabarito", sans-serif;
+}
