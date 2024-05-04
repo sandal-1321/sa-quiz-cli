@@ -11,7 +11,7 @@ export default function Compo1() {
     const [cor, setCor] = useState()
 
     useEffect(() => {
-        axios.get('http://localhost:8080/view')
+        axios.get('https://sa-quiz-back.onrender.com/view')
             .then(res => {
                 setFind(res.data);
             })
